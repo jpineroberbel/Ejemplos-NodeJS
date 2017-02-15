@@ -22,5 +22,34 @@ router.get('/*/index.html',function (req, res) {
 })
 
 // Ejemplos de cómo capturar post, put y delete
-//router.post('/ejemploPost',function()
+router.post('/libros',function(req, res) {
+  // Simulamos que en el post vienen los datos del libro a añadir
+  var titulo = req.body.titulo;
+  var autor = req.body.autor;
+  var isbn = req.body.isbn;
+  
+  // Uso una plantilla JADE
+  res.render('apiLibros', { tipoPeticion: 'post', titulo: titulo, autor: autor, isbn: isbn });
+})
+
+router.put('/libros',function(req, res) {
+  var titulo = req.body.titulo;
+  var autor = req.body.autor;
+  var isbn = req.body.isbn;
+  
+  // Uso una plantilla JADE
+  res.render('apiLibros', { tipoPeticion: 'post', titulo: titulo, autor: autor, isbn: isbn });
+
+})
+
+router.delete('/libros',function(req, res) {
+  var titulo = req.body.titulo;
+  var autor = req.body.autor;
+  var isbn = req.body.isbn;
+  
+  // Uso una plantilla JADE
+  res.render('apiLibros', { tipoPeticion: 'post', titulo: titulo, autor: autor, isbn: isbn });
+
+})
+
 module.exports = router;
