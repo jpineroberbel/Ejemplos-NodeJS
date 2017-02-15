@@ -3,12 +3,10 @@
 Relación de ejemplos usados en clase para explicar NodeJS + Express
 
 ## Ejercicios #1
-1 Probar cómo capturar post, put, delete
-
-2 Probar a capturar el paso de parámetros al server
++ Probar cómo capturar post, put, delete
++ Probar a capturar el paso de parámetros al server
     - En el archivo de rutas (routes/index.js) se puede encontrar como tratar cada ejemplos
-
-3 Probar a trabajar con expresiones regulares en las rutas
++ Probar a trabajar con expresiones regulares en las rutas
     - En el archivo de rutas (routes/index.js) se puede encontrar como tratar cada ejemplos
 
 
